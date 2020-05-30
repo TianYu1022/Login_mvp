@@ -1,7 +1,6 @@
 package com.tianyu.login_mvp.activity;
 
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btn_login;
     private EditText et_pass;
     private EditText et_name;
+    private Button btn_register;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         et_name = (EditText) findViewById(R.id.et_name);
 
         btn_login.setOnClickListener(this);
+        btn_register = (Button) findViewById(R.id.btn_register);
+        btn_register.setOnClickListener(this);
     }
 
     @Override
@@ -40,6 +42,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.btn_login:
                 login();
+                break;
+            case R.id.btn_register:
+                Toast.makeText(this, "注册按钮", Toast.LENGTH_SHORT).show();
                 break;
         }
     }
