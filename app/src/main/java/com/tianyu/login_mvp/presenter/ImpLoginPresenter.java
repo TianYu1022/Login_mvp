@@ -1,7 +1,6 @@
 package com.tianyu.login_mvp.presenter;
 
 import android.text.TextUtils;
-import android.widget.Toast;
 
 import com.tianyu.login_mvp.bean.LoginBean;
 import com.tianyu.login_mvp.callback.LoginCallback;
