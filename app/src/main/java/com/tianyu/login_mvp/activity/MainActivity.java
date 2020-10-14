@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private EditText et_name;
     private Button btn_register;
 
-    // TODO: 2020/5/31 修改了这
+    // TODO: 2020/5/31 修改了这  我是分支1
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
